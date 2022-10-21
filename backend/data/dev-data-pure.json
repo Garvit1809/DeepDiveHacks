@@ -1,0 +1,88 @@
+[
+  {
+    "habitat": null,
+    "habitatImpacts": "Bottomfish fishing operations, typically using weighted lines and baited hooks, do not have adverse impacts to the habitat.",
+    "imageGallery": [
+      {
+        "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/4_9.jpg",
+        "alt": "Crimson jobfish on measuring board.  Photo credit: Pacific Islands Fisheries Group",
+        "title": "Crimson jobfish on measuring board.  Photo credit: Pacific Islands Fisheries Group"
+      },
+      {
+        "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/2_7.jpg",
+        "alt": "Crimson jobfish aboard fishing vessel.  Photo credit: Pacific Islands Fisheries Group",
+        "title": "Crimson jobfish aboard fishing vessel.  Photo credit: Pacific Islands Fisheries Group"
+      },
+      {
+        "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/1_10.jpg",
+        "alt": "Fishing for crimson jobfish.  Photo credit: Pacific Islands Fisheries Group",
+        "title": "Fishing for crimson jobfish.  Photo credit: Pacific Islands Fisheries Group"
+      },
+      {
+        "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/iStock-496376114_2MB_0.jpg",
+        "alt": "Pan-seared crispy crimson jobfish with kiawe smoked chili pepper honey. Photo credit: iStock",
+        "title": "Pan-seared crispy crimson jobfish with kiawe smoked chili pepper honey. Photo credit: iStock"
+      }
+    ],
+    "locations": [
+      "Crimson jobfish are distributed throughout the Indo-Pacific region.",
+      "They inhabit hard bottoms at depths from 40 to 120 fathoms."
+    ],
+    "management": null,
+    "NOAAFisheriesRegion": "Pacific Islands",
+    "population": "Unknown, but the stock is contained in 5 bottomfish complexes whose status ranges from overfished to not overfished to unknown.",
+    "populationStatus": [
+      "The population status of the American Samoa Bottomfish Multi-species Complex, which includes crimson jobfish, is overfished and subject to overfishing (2019 stock assessment).",
+      "The population status of the Guam Bottomfish Multi-species Complex, which includes crimson jobfish, is overfished but not subject to overfishing (2019 stock assessment).",
+      "The population status of the Main Hawaiian Islands Deep 7 Bottomfish Multi-species Complex, which includes crimson jobfish, is not overfished and is not subject to overfishing (2021 stock assessment).",
+      "The population status of the Northern Mariana Islands Bottomfish Multi-species Complex, which includes crimson jobfish, is not overfished and is not subject to overfishing (2019 stock assessment).",
+      "The population status of the Northwestern Hawaiian Islands Bottomfish Multi-species Complex, which includes crimson jobfish, is unknown. This stock complex occurs within the Papahanaumokuakea Marine National Monument where commercial fishing is prohibited."
+    ],
+    "scientificName": "Pristipomoides filamentosus",
+    "speciesAliases": ["Opakapaka", "Hawaiian pink snapper"],
+    "speciesIllustrationPhoto": {
+      "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/Pink_snapper_NB_W_0.png",
+      "alt": "Pink snapper",
+      "title": "Pink snapper"
+    },
+    "speciesName": "Crimson Jobfish",
+    "availability": "Year-round",
+    "biology": [
+      "Crimson jobfish reach sexual maturity around 1.8 years of age.",
+      "Spawning occurs between June and December with a peak in August.",
+      "Large fish reach about 20 lb and 3 feet long.",
+      "They feed on shrimps, squids, and small fishes."
+    ],
+    "calories": "100",
+    "carbohydrate": "0 g",
+    "cholesterol": "37 mg",
+    "fiber": "0 g",
+    "color": "clear, light pink",
+    "fishingRate": "Reduced to end overfishing of the bottomfish complex in American Samoa. At recommended levels for other 4 bottomfish complexes.",
+    "harvest": [
+      "Crimson jobfish are highly prized for their quality texture and delicate taste.",
+      "Total catch for crimson jobfish in 2020 was approximately 120,000 pounds",
+      "Non-commercial fishing includes sustenance, subsistence, traditional indigenous, and recreational fishing. Non-commercial fisheries in the Pacific Islands are major economic contributors to coastal communities, are socially and culturally significant, and marine resources are regularly harvested for non-profit distribution within fishing communities and portions of the catch often are sold to defray expenses."
+    ],
+    "harvestType": "Wild",
+    "healthBenifits": ["Great source of lean", "ealthy protein and rich in vitamins"],
+    "physicalDescription": [
+      "Skin that is slightly brown with some brighter colors when caught over hard bottoms.",
+      "Their caudal fin has an orange edge.",
+      "Pectoral fins are brownish or yellow.",
+      "The iris is typically yellow."
+    ],
+    "protein": "20.5",
+    "quote": "U.S. wild-caught crimson jobfish is a smart seafood choice because it is sustainably managed and responsibly harvested under U.S. regulations.",
+    "saturatedFattyAcids": "0.285 g",
+    "selenium": "38.2 mcg",
+    "servingWeight": "100 g (raw)",
+    "servings": 1,
+    "sodium": "64 mg",
+    "source": "U.S -wild caught around Hawaii and Pacific Islands Region territories.",
+    "sugars": "0 g",
+    "totalFat": "1.31 g",
+    "taste": "Crimson jobfish has a delicate flavor.",
+    "texture": "Crimson jobfish has&nbsp;a firm texture and can be prepared in a variety of ways from steaming smaller-sized fish to fillets for sashimi."
+  }
+]
