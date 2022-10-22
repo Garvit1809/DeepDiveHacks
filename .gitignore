@@ -1,1 +1,8 @@
+# User folders
+.vscode
+
+# Project folders
 node_modules
+
+config.env
+.env

@@ -28,3 +28,9 @@ function App() {
 }
 
 export default App;
+
+// <Switch>
+//         <Route path='/' component={Home} />
+//         <Route path='/resesarcher-loign' component={Home} />
+//         <Route path='/become-a-researcher' component={Home} />
+//       </Switch>
