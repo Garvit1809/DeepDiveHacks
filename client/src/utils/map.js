@@ -21,7 +21,7 @@ export const initMap = (mapId, coordinates) => {
   const map = L.map(mapId).setView(coordinates, 13);
 
   L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-    maxZoom: 19,
+    maxZoom: 3,
     minZoom: 3,
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
   }).addTo(map);
