@@ -61,8 +61,20 @@ const fishSchema = new mongoose.Schema({
   sugars: String,
   taste: String,
   texture: String,
-  // TODO:
-  // Need to add coordinates
+  // coordinates: [Number],
+  coordinates: [
+    {
+      type: {
+        type: String,
+        enum: ['Point'],
+        required: true,
+      },
+      coordinates: {
+        type: [Number],
+        required: true,
+      },
+    },
+  ],
 });
 
 const FishSpecies = mongoose.model('FishSpecies', fishSchema);
