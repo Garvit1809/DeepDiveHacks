@@ -1,7 +1,10 @@
-import FishPage from "./Pages/FishPage";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useRef } from "react";
+import { Route, Routes } from 'react-router-dom'
+import Home from "./Pages/Home";
+import FishPage from "./Pages/FishPage";
+import Research from "./Pages/Research";
 
 function App() {
   const containerRef = useRef(null);
@@ -21,16 +24,14 @@ function App() {
       containerRef={containerRef}
     >
       <main data-scroll-container ref={containerRef}>
-        <FishPage />
+        <Routes>
+         <Route path="/" element={<Home/>} /> 
+         <Route path="dive" element={<FishPage/>} />
+         <Route path="research" element={<Research/>} />
+        </Routes>
       </main>
     </LocomotiveScrollProvider>
   );
 }
 
 export default App;
-
-// <Switch>
-//         <Route path='/' component={Home} />
-//         <Route path='/resesarcher-loign' component={Home} />
-//         <Route path='/become-a-researcher' component={Home} />
-//       </Switch>
