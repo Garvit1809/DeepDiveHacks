@@ -1,4 +1,5 @@
 const FishSpecies = require('../models/fishSpeciesModel');
+const NewFishSpecies = require('../models/newFishSpeciesModel');
 const catchAsync = require('../utils/catchAsync');
 
 /**
@@ -42,5 +43,19 @@ exports.createFishSpecies = catchAsync(async (req, res) => {
   res.status(201).json({
     status: 'success',
     data: newFishSpecies,
+  });
+});
+
+/**
+ * @function - files a new fish to the researchers
+ * @return - { status }
+ */
+exports.fileNewFish = catchAsync(async (req, res) => {
+  const { fishDetails } = req.body;
+
+  await NewFishSpecies.create({ ...fishDetails });
+
+  res.status(201).json({
+    status: 'success',
   });
 });

@@ -2,6 +2,10 @@
   {
     "habitat": null,
     "habitatImpacts": "Bottomfish fishing operations, typically using weighted lines and baited hooks, do not have adverse impacts to the habitat.",
+    "depthFoundAt": {
+      "lowerRange": 40,
+      "upperRange": 400
+    },
     "imageGallery": [
       {
         "src": "https://origin-east-01-drupal-fishwatch.woc.noaa.gov/sites/default/files/4_9.jpg",

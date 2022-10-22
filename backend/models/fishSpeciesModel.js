@@ -15,7 +15,12 @@ const fishSchema = new mongoose.Schema({
     default: [],
   },
   locations: [String],
-  depthFoundAt: Number,
+  depthFoundAt: {
+    type: {
+      lowerRange: Number,
+      upperRange: Number,
+    },
+  },
   management: String,
   NOAAFisheriesRegion: String, // can be coordinates
   population: String,

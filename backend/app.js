@@ -4,7 +4,8 @@ const morgan = require('morgan');
 const cors = require('cors');
 
 // Application Modules
-const fishRouter = require('./routes/fishRouter');
+const fishRouter = require('./routes/fishRoutes');
+const researcherRouter = require('./routes/researcherRoutes');
 const globalErrorHandler = require('./controllers/errorController');
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.json());
 // API ROUTES
 
 app.use('/api/v1/fishes/', fishRouter);
+app.use('/api/v1/researcher/', researcherRouter);
 
 app.all('*', (req, res) => {
   res.status(404).json({
