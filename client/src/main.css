@@ -1,11 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
-*{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
 }
 
-/* body */
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
 
-h1,h2,h3,h4,h5,h6{
- margin: 0;       
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.sea-background {
+  background-image: linear-gradient(to bottom right, rgba(0, 10, 50, 1), rgba(0, 0, 0, 0)),
+    url('https://i.pinimg.com/originals/57/ab/ab/57ababd5df0502d7659c7f41377528d9.png') !important;
+  background-size: cover;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.heading {
+  font-family: 'Silkscreen', cursive !important;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 8px);
+  }
+
+  100% {
+    transform: translate(0, -0);
+  }
 }

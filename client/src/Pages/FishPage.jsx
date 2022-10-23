@@ -9,8 +9,8 @@ import seaHorse from '../assets/sea-horse.png';
 import whale from '../assets/wtyy_4yql_220505-removebg-preview.png';
 import starfish from '../assets/starfish.png';
 import yellowtailRockfish from '../assets/Yellowtail Rockfish.png';
-import atlantic  from '../assets/Atlantic-Halibut.png'
-import crimson from '../assets/crimson fish.png'
+import atlantic from '../assets/Atlantic-Halibut.png';
+import crimson from '../assets/crimson fish.png';
 
 const Intro = styled.div`
   /* border: 1px solid red; */
@@ -23,7 +23,7 @@ const Intro = styled.div`
   align-items: center;
   justify-content: center;
 
-  h1{
+  h1 {
     font-size: 2rem;
     font-weight: 600;
     color: white;
@@ -79,42 +79,41 @@ const FirstFish = styled.div`
     padding: 1rem;
     z-index: 100;
     background-color: lightgray;
-    -webkit-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
     text-align: center;
   }
 
-  img.goldDup{
+  img.goldDup {
     position: absolute;
   }
 
-  img.gold1{
-    left:120px;
+  img.gold1 {
+    left: 120px;
     width: 120px;
     height: 100px;
   }
-  img.gold2{
+  img.gold2 {
     left: -3px;
     top: 24px;
     /* z-index: ; */
     width: 80px;
     height: 60px;
   }
-  img.gold3{
-    left:180px;
+  img.gold3 {
+    left: 180px;
     top: 80px;
     width: 120px;
     height: 100px;
   }
 
-  img.gold4{
-    left:200px;
+  img.gold4 {
+    left: 200px;
     top: 20px;
     width: 150px;
     height: 100px;
   }
- 
 `;
 
 const squidAni = keyframes`
@@ -134,18 +133,17 @@ const SecondFish = styled.div`
   width: 100vw;
   height: 80px;
   display: flex;
-  
-  div{
+
+  div {
     width: 150px;
     animation: ${squidAni} 10s linear infinite;
     /* border: 1px solid red; */
     position: relative;
   }
-  
+
   img {
     width: 150px;
     height: 140px;
-    
   }
 
   p {
@@ -158,9 +156,9 @@ const SecondFish = styled.div`
     padding: 1rem;
     z-index: 100;
     background-color: lightgray;
-    -webkit-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
     text-align: center;
   }
 `;
@@ -183,10 +181,10 @@ const ThirdFish = styled.div`
     z-index: 1;
     height: 150px;
   }
-  
+
   img.guppy2 {
     z-index: 1;
-    
+
     left: 42vw;
     top: 60px;
     position: absolute;
@@ -194,7 +192,7 @@ const ThirdFish = styled.div`
     width: 150px;
     height: 150px;
   }
-  img.guppy3{
+  img.guppy3 {
     left: 35vw;
     top: 10px;
     z-index: 1;
@@ -223,7 +221,7 @@ right: 520px;
   right: 20px;
   transform: rotate(0) rotateX(0);
 }
-`
+`;
 const CrimsonAni2 = keyframes`
 0%{
   right: 20px;
@@ -242,7 +240,7 @@ right: 520px;
   right: 20px;
   transform: rotate(0) rotateX(0);
 }
-`
+`;
 
 const CrimsonAni3 = keyframes`
 0%{
@@ -262,7 +260,7 @@ right: 550px;
   right: 50px;
   transform: rotate(0) rotateX(0);
 }
-`
+`;
 
 const FourthFish = styled.div`
   /* border: 1px solid blue; */
@@ -270,7 +268,7 @@ const FourthFish = styled.div`
   height: 200px;
   position: relative;
 
-  img.seahorse{
+  img.seahorse {
     position: absolute;
     top: -60px;
     left: -100px;
@@ -278,7 +276,7 @@ const FourthFish = styled.div`
     transform: rotate(180deg) rotateX(180deg);
   }
 
-  img.crimson1{
+  img.crimson1 {
     position: absolute;
     top: 0px;
     right: 20px;
@@ -287,7 +285,7 @@ const FourthFish = styled.div`
     animation: ${CrimsonAni} 10s ease-in-out infinite;
   }
 
-  img.crimson2{
+  img.crimson2 {
     position: absolute;
     top: -50px;
     right: 20px;
@@ -296,7 +294,7 @@ const FourthFish = styled.div`
     animation: ${CrimsonAni2} 10s ease-in-out infinite;
   }
 
-  img.crimson3{
+  img.crimson3 {
     position: absolute;
     top: 40px;
     right: 50px;
@@ -340,15 +338,15 @@ from{
 } to {
   top: 50px
 }
-`
+`;
 
 const SixthFish = styled.div`
   /* border: 1px solid red; */
   width: 100vw;
   height: 200px;
   position: relative;
-  
-  div{
+
+  div {
     width: 200px;
     /* border: 1px solid red; */
     position: absolute;
@@ -358,7 +356,7 @@ const SixthFish = styled.div`
     animation: ${yellowAni} 1s ease-in;
   }
 
-  img{
+  img {
     left: 10vw;
     width: 200px;
     height: 200px;
@@ -375,9 +373,9 @@ const SixthFish = styled.div`
     padding: 1rem;
     z-index: 100;
     background-color: lightgray;
-    -webkit-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 16px 7px rgba(0, 0, 0, 0.75);
     text-align: center;
   }
 `;
@@ -391,34 +389,33 @@ const SeventhFish = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  img{
+  img {
     position: absolute;
     width: 150px;
     height: 120px;
   }
 
-  img.fish1{
+  img.fish1 {
     left: 600px;
     transform: rotate(-40deg);
   }
 
-  img.fish2{
+  img.fish2 {
     left: 660px;
     top: 5px;
   }
-  img.fish3{
+  img.fish3 {
     left: 660px;
     top: 60px;
   }
-  img.fish4{
+  img.fish4 {
     left: 560px;
     top: 5px;
   }
 `;
 
-
 const EighthFish = styled.div`
-/* border: 1px solid red; */
+  /* border: 1px solid red; */
   width: 100vw;
   height: 200px;
   position: relative;
@@ -426,18 +423,17 @@ const EighthFish = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-
-  img{
+  img {
     width: 150px;
     height: 120px;
   }
 
-  img.starfish1{
+  img.starfish1 {
     position: absolute;
     bottom: -10px;
     transform: rotate(60deg);
   }
-  img.starfish2{
+  img.starfish2 {
     position: absolute;
     bottom: 10px;
     right: 100px;
@@ -445,23 +441,22 @@ const EighthFish = styled.div`
     height: 70px;
     /* transform: rotate(60deg); */
   }
-  img.starfish3{
+  img.starfish3 {
     position: absolute;
     bottom: 120px;
     right: 10px;
     transform: rotate(140deg);
   }
-
 `;
 
 const FishPage = () => {
   const [goldFish, setGoldFish] = useState(false);
-  const [squidFish, setSquidFish] = useState(false)
-  const [yellowTail, setYellowTail] = useState(false)
+  const [squidFish, setSquidFish] = useState(false);
+  const [yellowTail, setYellowTail] = useState(false);
   return (
     <>
       <Navbar />
-      <Section data-scroll >
+      <Section data-scroll>
         <Intro>
           <h1>🤿 Get a Virtual Experience of Skuba Diving here 🤿</h1>
         </Intro>
@@ -471,8 +466,7 @@ const FishPage = () => {
             data-scroll
             data-scroll-speed='12'
             data-scroll-direction='horizontal'
-            onClick={() => setGoldFish(!goldFish)}
-          >
+            onClick={() => setGoldFish(!goldFish)}>
             <img src={gold} alt='gold' className='goldfish'></img>
             <img src={gold} alt='gold' className='goldDup gold1'></img>
             <img src={gold} alt='gold' className='goldDup gold2'></img>
@@ -480,63 +474,117 @@ const FishPage = () => {
             <img src={gold} alt='gold' className='goldDup gold4'></img>
             {goldFish ? (
               <p className='about'>
-              The goldfish is a freshwater fish in the family Cyprinidae of order Cypriniformes. It is commonly kept as a pet in indoor aquariums, and is one of the most popular aquarium fish. Goldfish released into the wild have become an invasive pest in parts of North America
+                The goldfish is a freshwater fish in the family Cyprinidae of order Cypriniformes. It is commonly kept
+                as a pet in indoor aquariums, and is one of the most popular aquarium fish. Goldfish released into the
+                wild have become an invasive pest in parts of North America
               </p>
             ) : null}
           </div>
         </FirstFish>
         <SecondFish>
-        <div>
-        <img src={squid} alt='' onClick={() => setSquidFish(!squidFish)} />
-        {
-          squidFish ? <p>A squid is a mollusc with an elongated soft body, large eyes, eight arms, and two tentacles in the superorder Decapodiformes. Like all other cephalopods, squid have a distinct head, bilateral symmetry, and a mantle. They are mainly soft-bodied, like octopuses, but have a small internal skeleton in the form of a rod-like gladius or pen, made of chitin</p> : null
-        }
-        </div>
+          <div>
+            <img src={squid} alt='' onClick={() => setSquidFish(!squidFish)} />
+            {squidFish ? (
+              <p>
+                A squid is a mollusc with an elongated soft body, large eyes, eight arms, and two tentacles in the
+                superorder Decapodiformes. Like all other cephalopods, squid have a distinct head, bilateral symmetry,
+                and a mantle. They are mainly soft-bodied, like octopuses, but have a small internal skeleton in the
+                form of a rod-like gladius or pen, made of chitin
+              </p>
+            ) : null}
+          </div>
         </SecondFish>
         <ThirdFish>
-          <img src={guppy} alt='' data-scroll data-scroll-speed='8' data-scroll-direction='vertical' className='guppy1' />
-          <img src={guppy} alt='' data-scroll data-scroll-speed='7' data-scroll-direction='vertical' className='guppy2' />
-          <img src={guppy} alt='' data-scroll data-scroll-speed='10' data-scroll-direction='vertical' className='guppy3' />
+          <img
+            src={guppy}
+            alt=''
+            data-scroll
+            data-scroll-speed='8'
+            data-scroll-direction='vertical'
+            className='guppy1'
+          />
+          <img
+            src={guppy}
+            alt=''
+            data-scroll
+            data-scroll-speed='7'
+            data-scroll-direction='vertical'
+            className='guppy2'
+          />
+          <img
+            src={guppy}
+            alt=''
+            data-scroll
+            data-scroll-speed='10'
+            data-scroll-direction='vertical'
+            className='guppy3'
+          />
         </ThirdFish>
         <FourthFish>
           <img src={seaHorse} alt='' className='seahorse' />
-          <img src={crimson} alt="" className='crimson1' />
-          <img src={crimson} alt="" className='crimson2' />
-          <img src={crimson} alt="" className='crimson3' />
+          <img src={crimson} alt='' className='crimson1' />
+          <img src={crimson} alt='' className='crimson2' />
+          <img src={crimson} alt='' className='crimson3' />
         </FourthFish>
         <FifthFish>
           <img src={whale} alt='' />
         </FifthFish>
         <SixthFish>
-        <div  onClick={() => setYellowTail(!yellowTail)} 
-        data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' 
-        >
-        <img src={yellowtailRockfish} alt="" />
-        {
-          yellowTail ? <p>The yellowtail rockfish, or yellowtail seaperch, is a species of marine ray-finned fish belonging to the subfamily Sebastinae, the rockfishes, part of the family Scorpaenidae. This species lives mainly off the coast of western North America from California to Alaska.</p> : null
-        }
-        </div>
+          <div
+            onClick={() => setYellowTail(!yellowTail)}
+            data-scroll
+            data-scroll-speed='-8'
+            data-scroll-direction='horizontal'>
+            <img src={yellowtailRockfish} alt='' />
+            {yellowTail ? (
+              <p>
+                The yellowtail rockfish, or yellowtail seaperch, is a species of marine ray-finned fish belonging to the
+                subfamily Sebastinae, the rockfishes, part of the family Scorpaenidae. This species lives mainly off the
+                coast of western North America from California to Alaska.
+              </p>
+            ) : null}
+          </div>
         </SixthFish>
         <SeventhFish>
-              <img src={atlantic} alt="" className='fish1' data-scroll
-              data-scroll-speed='-14'
-              data-scroll-direction='horizontal' />
-              <img src={atlantic} alt="" className='fish2' data-scroll
-              data-scroll-speed='-14.2'
-              data-scroll-direction='horizontal' />
-              <img src={atlantic} alt="" className='fish3' data-scroll
-              data-scroll-speed='-14.4'
-              data-scroll-direction='horizontal' />
-              <img src={atlantic} alt="" className='fish4' data-scroll
-              data-scroll-speed='-15'
-              data-scroll-direction='horizontal' />
+          <img
+            src={atlantic}
+            alt=''
+            className='fish1'
+            data-scroll
+            data-scroll-speed='-14'
+            data-scroll-direction='horizontal'
+          />
+          <img
+            src={atlantic}
+            alt=''
+            className='fish2'
+            data-scroll
+            data-scroll-speed='-14.2'
+            data-scroll-direction='horizontal'
+          />
+          <img
+            src={atlantic}
+            alt=''
+            className='fish3'
+            data-scroll
+            data-scroll-speed='-14.4'
+            data-scroll-direction='horizontal'
+          />
+          <img
+            src={atlantic}
+            alt=''
+            className='fish4'
+            data-scroll
+            data-scroll-speed='-15'
+            data-scroll-direction='horizontal'
+          />
         </SeventhFish>
         <EighthFish>
-        <img src={starfish} alt="" className='starfish1' />
-        <img src={starfish} alt="" className='starfish2'/>
-        <img src={starfish} alt="" className='starfish3' />
-        <img src={starfish} alt="" className='starfish4'/>
-        <img src={starfish} alt="" className='starfish5'/>
+          <img src={starfish} alt='' className='starfish1' />
+          <img src={starfish} alt='' className='starfish2' />
+          <img src={starfish} alt='' className='starfish3' />
+          <img src={starfish} alt='' className='starfish4' />
+          <img src={starfish} alt='' className='starfish5' />
         </EighthFish>
       </Section>
     </>

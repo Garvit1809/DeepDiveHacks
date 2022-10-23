@@ -6,10 +6,9 @@ const Section = styled.div`
   width: 100vw;
   height: 4rem;
   /* border: 1px solid red; */
-  -webkit-box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
--moz-box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
-box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
-
+  -webkit-box-shadow: -2px 10px 16px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 10px 16px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 10px 16px -3px rgba(0, 0, 0, 0.75);
 
   display: flex;
   align-items: center;
@@ -17,10 +16,10 @@ box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
 `;
 
 const Title = styled.h1`
-margin-left: 2rem;
-font-size: 2rem;
-font-weight: 500;
-`
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+`;
 
 const MenuList = styled.ul`
   display: flex;
@@ -39,15 +38,16 @@ const Navbar = () => {
       <Title>ScOObaDive</Title>
       <MenuList>
         <MenuItem>
-          <Link to="/" >Home</Link>
+          <Link to='/'>Home</Link>
         </MenuItem>
         <MenuItem>
-          <Link to="/dive">Scuba Dive</Link>
+          <Link to='/dive'>Scuba Dive</Link>
         </MenuItem>
         <MenuItem>
-          <Link to="/research">
-            Encyclopedia
-          </Link>
+          <Link to='/encyclopedia'>Encyclopedia</Link>
+        </MenuItem>
+        <MenuItem>
+          <Link to='/add-fish'>Add New Fish</Link>
         </MenuItem>
       </MenuList>
     </Section>
