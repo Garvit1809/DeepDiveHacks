@@ -35,7 +35,7 @@ const MenuItem = styled.li`
 
 const Navbar = () => {
   return (
-    <Section data-scroll>
+    <Section>
       <Title>ScOObaDive</Title>
       <MenuList>
         <MenuItem>

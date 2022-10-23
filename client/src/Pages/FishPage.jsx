@@ -303,9 +303,9 @@ const FishPage = () => {
   return (
     <>
       <Navbar />
-      <Section>
+      <Section data-scroll >
         <Intro></Intro>
-        <FirstFish data-scroll>
+        <FirstFish>
           <div
             className='first'
             data-scroll

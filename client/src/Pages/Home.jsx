@@ -62,6 +62,11 @@ display: flex;
   }
 `
 
+const Container4 = styled.div`
+height: 2rem;
+width: 100vw;
+`
+
 const Home = () => {
   return (
     <>
@@ -79,12 +84,14 @@ const Home = () => {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure inventore reprehenderit! Officiis, labore hic reprehenderit, dolore natus voluptatum voluptatibus ducimus, tenetur quas iusto reiciendis odit harum voluptatem ea? Perspiciatis rem molestiae vero sapiente id voluptas, assumenda voluptates ipsam. Assumenda.
           </p>
-          <img src={seaImage} alt="rvr" />
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="rvr" />
         </Container2>
         <Container3>
           <img src={seaImage} alt="rvr" />
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quisquam nisi commodi laborum, beatae nesciunt nulla quae placeat veritatis id aperiam? Ea id aut harum, quas ut similique distinctio qui possimus sequi! Quae eveniet exercitationem enim debitis? Cum, dignissimos autem?</p>
         </Container3>
+        <Container4>
+        </Container4>
       </Section>
     </>
   );
