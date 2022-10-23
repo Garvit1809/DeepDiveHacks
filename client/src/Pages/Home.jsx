@@ -75,14 +75,12 @@ const Home = () => {
         <Container>
           <img src={seaImage} alt='eejcb' />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste rem quas earum dolore eius
-            praesentium laborum iusto accusamus accusantium. Dignissimos hic illum consectetur sed earum provident
-            perferendis libero totam atque explicabo est accusantium dolorum voluptate dolor aspernatur, eum natus!
+          The Idea behind Scooba Dive is to build a hassle-free web application which helps peoples and researchers to know more about marine life. We provide a virtual Scuba diving experience and a fish encyclopedia through which users can experience or get aware of marine life 🤿. We are spreading awareness through a fun activity of Scuba Diving.
           </p>
         </Container>
         <Container2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure inventore reprehenderit! Officiis, labore hic reprehenderit, dolore natus voluptatum voluptatibus ducimus, tenetur quas iusto reiciendis odit harum voluptatem ea? Perspiciatis rem molestiae vero sapiente id voluptas, assumenda voluptates ipsam. Assumenda.
+            We provide a cool feature of Vitual Scuba Diving for our users who never got to experience a real Scuba Dive. We have added many beautiful marine fishes which you see while making a scuba dive. Only 6 million people around the globe have experience Scuba Diving, so its a little effort from our side to give people aatleast a virtual Scuba Diving Experience.
           </p>
           <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="rvr" />
         </Container2>
