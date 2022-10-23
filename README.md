@@ -68,7 +68,8 @@ We were able to complete our project successfully besides lot's off challenges, 
 
 ## What's next for Scooba Dive?
 
-We plan to explore more on this  and create a complete web application and help the user to experience the best out of it.
+1) We would like to add more marine fishes in Scuba Diving Section and would like to introduce plants as well to give a more real feel to the virtual experience.
+2) Also we would filter our data so user can get more meaningful information about the fishes they are looking for.
 
 ## Team Members:
 <a href="https://github.com/Garvit1809/DeepDiveHacks/graphs/contributors">
