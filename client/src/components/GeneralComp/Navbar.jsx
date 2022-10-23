@@ -5,7 +5,11 @@ import styled from 'styled-components';
 const Section = styled.div`
   width: 100vw;
   height: 4rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  -webkit-box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
+box-shadow: -2px 10px 16px -3px rgba(0,0,0,0.75);
+
 
   display: flex;
   align-items: center;
@@ -31,8 +35,8 @@ const MenuItem = styled.li`
 
 const Navbar = () => {
   return (
-    <Section data-scroll >
-      <Title>ScubaDive</Title>
+    <Section data-scroll>
+      <Title>ScOObaDive</Title>
       <MenuList>
         <MenuItem>
           <Link to="/" >Home</Link>

@@ -5,6 +5,8 @@ import { Route, Routes } from 'react-router-dom'
 import Home from "./Pages/Home";
 import FishPage from "./Pages/FishPage";
 import Research from "./Pages/Research";
+import Register from "./Pages/Register";
+import Login from "./Pages/Login";
 
 function App() {
   const containerRef = useRef(null);
@@ -25,12 +27,14 @@ function App() {
     >
       <main data-scroll-container ref={containerRef}>
         <Routes>
+         <Route path="/register" element={<Register/>} /> 
+         <Route path="/login" element={<Login/>} /> 
          <Route path="/" element={<Home/>} /> 
          <Route path="dive" element={<FishPage/>} />
          <Route path="research" element={<Research/>} />
-        </Routes>
-      </main>
-    </LocomotiveScrollProvider>
+         </Routes>
+         </main>
+         </LocomotiveScrollProvider>
   );
 }
 

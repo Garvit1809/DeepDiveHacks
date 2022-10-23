@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import styled from 'styled-components'
 
-input {
-  caret-color: red;
-}
-
-body {
-  background-image: url("https://media.istockphoto.com/photos/colorful-coral-reef-with-many-fishes-picture-id508960998?b=1&k=20&m=508960998&s=170667a&w=0&h=rgX09SkfLgZf8JrHYCHRwll6zLUhKI0HiZz1bMsLc0E=");
+const Section = styled.div`
+ background-image: url("https://media.istockphoto.com/photos/colorful-coral-reef-with-many-fishes-picture-id508960998?b=1&k=20&m=508960998&s=170667a&w=0&h=rgX09SkfLgZf8JrHYCHRwll6zLUhKI0HiZz1bMsLc0E=");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -19,9 +17,8 @@ body {
   place-items: center;
   overflow: hidden;
   font-family: poppins;
-}
 
-.container {
+  .container {
   position: relative;
   width: 350px;
   height: 500px;
@@ -121,3 +118,40 @@ h1 {
   top: 0;
   left: 0;
 }
+
+input {
+  /* caret-color: red; */
+}
+`
+
+function Register() {
+const navigate = useNavigate()
+  const handleSubmit = () => {
+    navigate('/')
+  }
+  return (
+    <Section>
+    <div className="container"> 
+      <form onSubmit={() => handleSubmit()} >
+        {/* <div className="brand-logo"></div> */}
+        <div className="brand-title">ScOObaDive</div>
+        <div className="inputs">
+          <label>NAME</label>
+          <input type="name" placeholder="John" required />
+          <label>EMAIL</label>
+          <input type="email" placeholder="example@test.com" required />
+          <label>PASSWORD</label>
+          <input type="password" placeholder="Min 6 charaters long" required />
+          <button type="submit" style={{ backgroundColor: "lightBlue" }}>
+            REGISTER
+          </button>
+        </div>
+      </form>
+
+      <button type="submit">LOGIN</button>
+    </div>
+    </Section>
+  );
+}
+
+export default Register;
