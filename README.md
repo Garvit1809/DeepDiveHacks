@@ -1,4 +1,4 @@
-# Scooba Dive 
+<h1 align="center">Scooba Dive</h1> 
 
 This project is submitted for [MLH - Hack and Snack 2022 Hackathon](https://deepdivehacks.devpost.com/)
 
