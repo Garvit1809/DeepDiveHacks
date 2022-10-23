@@ -480,9 +480,7 @@ const FishPage = () => {
             <img src={gold} alt='gold' className='goldDup gold4'></img>
             {goldFish ? (
               <p className='about'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel consequuntur quibusdam laudantium,
-                minima aperiam soluta repudiandae, distinctio odio beatae quasi deleniti iusto illum officiis
-                consectetur accusamus, at expedita blanditiis.
+              The goldfish is a freshwater fish in the family Cyprinidae of order Cypriniformes. It is commonly kept as a pet in indoor aquariums, and is one of the most popular aquarium fish. Goldfish released into the wild have become an invasive pest in parts of North America
               </p>
             ) : null}
           </div>
@@ -491,7 +489,7 @@ const FishPage = () => {
         <div>
         <img src={squid} alt='' onClick={() => setSquidFish(!squidFish)} />
         {
-          squidFish ? <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum voluptates, odio expedita nisi omnis doloremque eaque sed quis earum!</p> : null
+          squidFish ? <p>A squid is a mollusc with an elongated soft body, large eyes, eight arms, and two tentacles in the superorder Decapodiformes. Like all other cephalopods, squid have a distinct head, bilateral symmetry, and a mantle. They are mainly soft-bodied, like octopuses, but have a small internal skeleton in the form of a rod-like gladius or pen, made of chitin</p> : null
         }
         </div>
         </SecondFish>
@@ -515,7 +513,7 @@ const FishPage = () => {
         >
         <img src={yellowtailRockfish} alt="" />
         {
-          yellowTail ? <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quibusdam beatae fuga officia voluptas eaque nemo vel vitae, ducimus esse porro dignissimos vero deserunt quas?</p> : null
+          yellowTail ? <p>The yellowtail rockfish, or yellowtail seaperch, is a species of marine ray-finned fish belonging to the subfamily Sebastinae, the rockfishes, part of the family Scorpaenidae. This species lives mainly off the coast of western North America from California to Alaska.</p> : null
         }
         </div>
         </SixthFish>
