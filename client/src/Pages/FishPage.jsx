@@ -9,21 +9,7 @@ import seaHorse from '../assets/sea-horse.png';
 import whale from '../assets/wtyy_4yql_220505-removebg-preview.png';
 import starfish from '../assets/starfish.png';
 import fi from '../assets/Yellowtail Rockfish.png';
-
-const fishAnimate = keyframes`
-0%{
-  transform: rotateX(0) rotate(0);
-}
-25%{
-  transform: rotate(20deg);
-}
-50%{
-  transform: rotate(0);
-}
-75%{
-  transform: rotate(-20deg);;
-}
-`;
+import jn  from '../assets/Atlantic-Halibut.png'
 
 const Intro = styled.div`
   border: 1px solid red;
@@ -39,8 +25,6 @@ const Section = styled.div`
   cursor: url(diver-cursor-removebg-preview.png), auto;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
   background-color: lightblue;
 `;
 
@@ -243,55 +227,75 @@ const SixthFish = styled.div`
 `;
 
 const SeventhFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
+  /* border: 1px solid red; */
+  width: 100vw;
   height: 200px;
   position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+
+  img{
+    position: absolute;
+    width: 150px;
+    height: 120px;
+  }
+
+  img.fish1{
+    left: 300px;
+    transform: rotate(-40deg);
+  }
+
+  img.fish2{
+    left: 360px;
+    top: 5px;
+  }
+  img.fish3{
+    left: 360px;
+    top: 60px;
+  }
+  img.fish4{
+    left: 260px;
+    top: 5px;
+  }
 `;
+
 
 const EighthFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
+/* border: 1px solid red; */
+  width: 100vw;
   height: 200px;
   position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-`;
+  justify-content: flex-end;
 
-const NinthFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
 
-const TenthFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  img{
+    width: 150px;
+    height: 120px;
+  }
+
+  img.starfish1{
+    position: absolute;
+    bottom: -10px;
+    transform: rotate(60deg);
+  }
+  img.starfish2{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    width: 100px;
+    height: 70px;
+    /* transform: rotate(60deg); */
+  }
+  img.starfish3{
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+    transform: rotate(140deg);
+  }
+
 `;
 
 const FishPage = () => {
@@ -340,11 +344,26 @@ const FishPage = () => {
               <img src={fi} alt="" data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' />
         </SixthFish>
         <SeventhFish>
-              <img src={starfish} alt="" />
+              <img src={jn} alt="" className='fish1' data-scroll
+              data-scroll-speed='-5'
+              data-scroll-direction='horizontal' />
+              <img src={jn} alt="" className='fish2' data-scroll
+              data-scroll-speed='-5.2'
+              data-scroll-direction='horizontal' />
+              <img src={jn} alt="" className='fish3' data-scroll
+              data-scroll-speed='-5.4'
+              data-scroll-direction='horizontal' />
+              <img src={jn} alt="" className='fish4' data-scroll
+              data-scroll-speed='-6'
+              data-scroll-direction='horizontal' />
         </SeventhFish>
-        <EighthFish></EighthFish>
-        <NinthFish></NinthFish>
-        <TenthFish></TenthFish>
+        <EighthFish>
+        <img src={starfish} alt="" className='starfish1' />
+        <img src={starfish} alt="" className='starfish2'/>
+        <img src={starfish} alt="" className='starfish3' />
+        <img src={starfish} alt="" className='starfish4'/>
+        <img src={starfish} alt="" className='starfish5'/>
+        </EighthFish>
       </Section>
     </>
   );
