@@ -50,7 +50,7 @@ npm run dev -- --open
 
 ## Accomplishments that we're proud of 🏆
 
-We were able to complete the idea behind the lot's off challenges, and create a hack to solve the problem the researchers and people faces when they wants to know about fishes and other marine lifes but not able to find proper resources or a proper platform to explore on it.
+We were able to complete our project successfully behind the lot's off challenges, and create a hack to solve the problem that researchers and people faces when they wants to know about fishes and other marine lifes but not able to find proper resources or a proper platform to explore on it.
 
 ## What we learnt 📚
 
