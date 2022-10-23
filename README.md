@@ -1,11 +1,12 @@
-<h1 align="center">Scooba Dive</h1> 
+<h1 align="center"> SCOOBA DOVE </h1> 
 
 This project is submitted for [MLH - Hack and Snack 2022 Hackathon](https://deepdivehacks.devpost.com/)
 
 ---
 
-The Idea behind **Scooba Dive** is to build a hassle-free web application which **helps peoples and researchers to know information about various fishes** and **researchers can post their own research about fishes** which will be stored in a local MongoDB database.It provides features like **a map which shows regions in which a given fish is found** and **a virtual Scuba diving experience**.
-
+<p align="center">
+The Idea behind **Scooba Dive** is to build a hassle-free web application which **helps peoples and researchers to know more about marine life**. We provide a ** virtual Scuba diving experience** and a fish **encyclopedia** through which users can experience or get aware of marine life 🤿. We are spreading awareness through a fun activity of Scuba Diving.
+</p>
 ---
 
 # Technology Stack Used:
