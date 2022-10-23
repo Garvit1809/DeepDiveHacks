@@ -8,13 +8,26 @@ import guppy from '../assets/guppy.png';
 import seaHorse from '../assets/sea-horse.png';
 import whale from '../assets/wtyy_4yql_220505-removebg-preview.png';
 import starfish from '../assets/starfish.png';
-import fi from '../assets/Yellowtail Rockfish.png';
-import jn  from '../assets/Atlantic-Halibut.png'
+import yellowtailRockfish from '../assets/Yellowtail Rockfish.png';
+import atlantic  from '../assets/Atlantic-Halibut.png'
+import crimson from '../assets/crimson fish.png'
 
 const Intro = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
+  /* margin-top: 2rem; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+  }
 `;
 
 const Section = styled.div`
@@ -61,16 +74,14 @@ const FirstFish = styled.div`
     top: 10px;
     left: -200px;
     width: 200px;
-    /* border: 1px solid red; */
-    text-align: center;
-  }
-
-  p.cook {
-    position: absolute;
-    top: 210px;
-    /* left: -200px; */
-    width: 200px;
-    /* border: 1px solid red; */
+    /* border: 1px solid red */
+    border-radius: 10px;
+    padding: 1rem;
+    z-index: 100;
+    background-color: lightgray;
+    -webkit-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
     text-align: center;
   }
 
@@ -123,14 +134,34 @@ const SecondFish = styled.div`
   width: 100vw;
   height: 80px;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-
+  
+  div{
+    width: 150px;
+    animation: ${squidAni} 10s linear infinite;
+    /* border: 1px solid red; */
+    position: relative;
+  }
+  
   img {
     width: 150px;
     height: 140px;
-    animation: ${squidAni} 10s linear infinite;
-    /* transform: rotate(180deg) rotateX(180deg); */
+    
+  }
+
+  p {
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    width: 200px;
+    /* border: 1px solid red */
+    border-radius: 10px;
+    padding: 1rem;
+    z-index: 100;
+    background-color: lightgray;
+    -webkit-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+    text-align: center;
   }
 `;
 
@@ -138,19 +169,100 @@ const ThirdFish = styled.div`
   /* border: 1px solid red; */
   width: 100vw;
   height: 150px;
-  margin-left: 0vw;
-  margin-top: 0vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 
-  img {
+  img.guppy1 {
+    left: 39vw;
+    position: absolute;
+    margin-right: 10vw;
+    width: 150px;
+    z-index: 1;
+    height: 150px;
+  }
+  
+  img.guppy2 {
+    z-index: 1;
+    
+    left: 42vw;
+    top: 60px;
+    position: absolute;
+    margin-right: 10vw;
+    width: 150px;
+    height: 150px;
+  }
+  img.guppy3{
+    left: 35vw;
+    top: 10px;
+    z-index: 1;
+    position: absolute;
     margin-right: 10vw;
     width: 150px;
     height: 150px;
   }
 `;
+
+const CrimsonAni = keyframes`
+0%{
+  right: 20px;
+}
+25%{
+  right: 320px;
+}
+50%{
+right: 520px;
+}
+75%{
+  right: 220px;
+  
+}
+100%{
+  right: 20px;
+  transform: rotate(0) rotateX(0);
+}
+`
+const CrimsonAni2 = keyframes`
+0%{
+  right: 20px;
+}
+25%{
+  right: 320px;
+}
+50%{
+right: 520px;
+}
+75%{
+  right: 220px;
+  
+}
+100%{
+  right: 20px;
+  transform: rotate(0) rotateX(0);
+}
+`
+
+const CrimsonAni3 = keyframes`
+0%{
+  right: 50px;
+}
+25%{
+  right: 350px;
+}
+50%{
+right: 550px;
+}
+75%{
+  right: 250px;
+  
+}
+100%{
+  right: 50px;
+  transform: rotate(0) rotateX(0);
+}
+`
 
 const FourthFish = styled.div`
   /* border: 1px solid blue; */
@@ -158,12 +270,39 @@ const FourthFish = styled.div`
   height: 200px;
   position: relative;
 
-  img {
+  img.seahorse{
     position: absolute;
     top: -60px;
     left: -100px;
     width: 300px;
     transform: rotate(180deg) rotateX(180deg);
+  }
+
+  img.crimson1{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 200px;
+    transform: rotate(180deg) rotateX(180deg);
+    animation: ${CrimsonAni} 10s ease-in-out infinite;
+  }
+
+  img.crimson2{
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    width: 200px;
+    transform: rotate(180deg) rotateX(180deg);
+    animation: ${CrimsonAni2} 10s ease-in-out infinite;
+  }
+
+  img.crimson3{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 200px;
+    transform: rotate(180deg) rotateX(180deg);
+    animation: ${CrimsonAni3} 10s ease-in-out infinite;
   }
 `;
 
@@ -208,21 +347,38 @@ const SixthFish = styled.div`
   width: 100vw;
   height: 200px;
   position: relative;
-  /* margin-left: 0vw; */
-  /* margin-top: 0vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  
+  div{
+    width: 200px;
+    /* border: 1px solid red; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: ${yellowAni} 1s ease-in;
+  }
 
   img{
     left: 10vw;
-    position: absolute;
-    /* border: 1px solid red; */
     width: 200px;
     height: 200px;
-    animation: ${yellowAni} 1s ease-in;
     animation-delay: 7s;
+  }
+
+  p {
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    width: 200px;
+    /* border: 1px solid red */
+    border-radius: 10px;
+    padding: 1rem;
+    z-index: 100;
+    background-color: lightgray;
+    -webkit-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 16px 7px rgba(0,0,0,0.75);
+    text-align: center;
   }
 `;
 
@@ -242,20 +398,20 @@ const SeventhFish = styled.div`
   }
 
   img.fish1{
-    left: 300px;
+    left: 600px;
     transform: rotate(-40deg);
   }
 
   img.fish2{
-    left: 360px;
+    left: 660px;
     top: 5px;
   }
   img.fish3{
-    left: 360px;
+    left: 660px;
     top: 60px;
   }
   img.fish4{
-    left: 260px;
+    left: 560px;
     top: 5px;
   }
 `;
@@ -300,11 +456,15 @@ const EighthFish = styled.div`
 
 const FishPage = () => {
   const [goldFish, setGoldFish] = useState(false);
+  const [squidFish, setSquidFish] = useState(false)
+  const [yellowTail, setYellowTail] = useState(false)
   return (
     <>
       <Navbar />
       <Section data-scroll >
-        <Intro></Intro>
+        <Intro>
+          <h1>🤿 Get a Virtual Experience of Skuba Diving here 🤿</h1>
+        </Intro>
         <FirstFish>
           <div
             className='first'
@@ -325,36 +485,52 @@ const FishPage = () => {
                 consectetur accusamus, at expedita blanditiis.
               </p>
             ) : null}
-            {goldFish ? <p className='cook'>Want to cook it?</p> : null}
           </div>
         </FirstFish>
         <SecondFish>
-          <img src={squid} alt='' />
+        <div>
+        <img src={squid} alt='' onClick={() => setSquidFish(!squidFish)} />
+        {
+          squidFish ? <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum voluptates, odio expedita nisi omnis doloremque eaque sed quis earum!</p> : null
+        }
+        </div>
         </SecondFish>
         <ThirdFish>
-          <img src={guppy} alt='' data-scroll data-scroll-speed='8' data-scroll-direction='vertical' />
+          <img src={guppy} alt='' data-scroll data-scroll-speed='8' data-scroll-direction='vertical' className='guppy1' />
+          <img src={guppy} alt='' data-scroll data-scroll-speed='7' data-scroll-direction='vertical' className='guppy2' />
+          <img src={guppy} alt='' data-scroll data-scroll-speed='10' data-scroll-direction='vertical' className='guppy3' />
         </ThirdFish>
         <FourthFish>
-          <img src={seaHorse} alt='' />
+          <img src={seaHorse} alt='' className='seahorse' />
+          <img src={crimson} alt="" className='crimson1' />
+          <img src={crimson} alt="" className='crimson2' />
+          <img src={crimson} alt="" className='crimson3' />
         </FourthFish>
         <FifthFish>
           <img src={whale} alt='' />
         </FifthFish>
         <SixthFish>
-              <img src={fi} alt="" data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' />
+        <div  onClick={() => setYellowTail(!yellowTail)} 
+        data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' 
+        >
+        <img src={yellowtailRockfish} alt="" />
+        {
+          yellowTail ? <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quibusdam beatae fuga officia voluptas eaque nemo vel vitae, ducimus esse porro dignissimos vero deserunt quas?</p> : null
+        }
+        </div>
         </SixthFish>
         <SeventhFish>
-              <img src={jn} alt="" className='fish1' data-scroll
-              data-scroll-speed='-5'
+              <img src={atlantic} alt="" className='fish1' data-scroll
+              data-scroll-speed='-14'
               data-scroll-direction='horizontal' />
-              <img src={jn} alt="" className='fish2' data-scroll
-              data-scroll-speed='-5.2'
+              <img src={atlantic} alt="" className='fish2' data-scroll
+              data-scroll-speed='-14.2'
               data-scroll-direction='horizontal' />
-              <img src={jn} alt="" className='fish3' data-scroll
-              data-scroll-speed='-5.4'
+              <img src={atlantic} alt="" className='fish3' data-scroll
+              data-scroll-speed='-14.4'
               data-scroll-direction='horizontal' />
-              <img src={jn} alt="" className='fish4' data-scroll
-              data-scroll-speed='-6'
+              <img src={atlantic} alt="" className='fish4' data-scroll
+              data-scroll-speed='-15'
               data-scroll-direction='horizontal' />
         </SeventhFish>
         <EighthFish>

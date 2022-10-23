@@ -87,7 +87,7 @@ const Home = () => {
           <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="rvr" />
         </Container2>
         <Container3>
-          <img src={seaImage} alt="rvr" />
+          <img src="https://images.unsplash.com/photo-1607746747627-8f2311dac2bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZW5jeWNsb3BlZGlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="rvr" />
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quisquam nisi commodi laborum, beatae nesciunt nulla quae placeat veritatis id aperiam? Ea id aut harum, quas ut similique distinctio qui possimus sequi! Quae eveniet exercitationem enim debitis? Cum, dignissimos autem?</p>
         </Container3>
         <Container4>
