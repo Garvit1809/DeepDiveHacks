@@ -33,7 +33,10 @@ This hackathon project is our attempt to solve the problems of researchers and p
 ---
 
 ## How we built it ⚙️
-The real gem behind the project is the databases and the api's which we have created by our own. We have used MongoDB database to store the posts. 
+
+1) **Frontend** :- We used Vite.js, Chakra-Ui and javascript to build our UI and used styled-components and locomotive-scroll for creating smooth animations. It was our first time using locomotive-scroll, so developing the frontend was full of learning
+2) **Backend** :- We built our server through **node.js** and express.js for handling API requests. We also integrated a map using **leaflet** and **Google Map** services. Also used **Mongoose acts as a front end to MongoDB** which acts as a front end to MongoDB
+3) **Database** :- The real gem behind the project is the databases and the api's which we have created by our own. We have used MongoDB database to store data of fishes. 
 
 ## Installation/Execution ✅
 
@@ -46,16 +49,22 @@ npm run dev -- --open
 
 ## Challenges we ran into 💻
 
-1. Fetching, Installing Dependencies and Fixing Backend Errors.
-2. Figuring out the API for different regions or co-ordinates of different places was a huge task.
+1. Creating smooth animations in the Scuba Dive Page was a difficut task, it took us a lot of time to add animations to all the fishes
+2. Pushing and Merging our code on github was also a tedious task.
+3. Figuring out the API for different regions or co-ordinates of different places was a huge task.
+4. Gathering data of fishes from different resources as one cant find a proper data of a fish on any one platform.
 
 ## Accomplishments that we're proud of 🏆
 
-We were able to complete our project successfully behind the lot's off challenges, and create a hack to solve the problem that researchers and people faces when they wants to know about fishes and other marine lifes but not able to find proper resources or a proper platform to explore on it.
+We were able to complete our project successfully besides lot's off challenges, and create da hack to solve the problem that researchers and people faces when they wants to know about fishes and other marine lifes but not able to find proper resources or a proper platform to explore on it.
 
 ## What we learnt 📚
 
-We experimented lot of technologies and learnt pretty much everything we used out of this project.
+1) Its was our first time using Vite.js to create our frontend
+2) We learnt how to use Locomotive-scroll to create smooth scrolling animation
+3) Half of our team was **beginner**, so they learnt how to make and submit projects in a hackathon
+4) We also got familiar with param routes and middlewares in Express.js 
+5) We experimented lot of technologies and learnt pretty much everything we used out of this project.
 
 ## What's next for Scooba Dive?
 
