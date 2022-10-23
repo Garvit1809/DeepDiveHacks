@@ -39,7 +39,6 @@ npm run dev -- --open
 
 
 ## What's next for Scooba Dive?
-We plan to finish this challenge and create a complete web application and help the user to experience the best out of it.
 
 ## Team Members:
 <a href="https://github.com/Garvit1809/DeepDiveHacks/graphs/contributors">
