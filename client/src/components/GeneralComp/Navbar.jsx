@@ -46,6 +46,9 @@ const Navbar = () => {
         <MenuItem>
           <Link to='/encyclopedia'>Encyclopedia</Link>
         </MenuItem>
+        <MenuItem>
+          <Link to='/add-fish'>Add New Fish</Link>
+        </MenuItem>
       </MenuList>
     </Section>
   );
