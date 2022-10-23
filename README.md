@@ -63,6 +63,7 @@ We plan to explore more on this  and create a complete web application and help 
 ## Team Members:
 <a href="https://github.com/Garvit1809/DeepDiveHacks/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Garvit1809/DeepDiveHacks"/>
+  <img src= "https://avatars.githubusercontent.com/u/110384992?v=4"/>
 </a>
 
 ## Show your support
