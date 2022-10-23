@@ -21,7 +21,7 @@ const FishNutrients = ({ fishData }) => {
       </Heading>
 
       <Box display='grid' gridTemplateColumns='20rem 1fr'>
-        <NutrientDetails label='Calories:' value={calories} />
+        <NutrientDetails label='Calories' value={calories} />
         <NutrientDetails label='Carbohydrate' value={carbohydrate} />
         <NutrientDetails label='Cholestrol' value={cholesterol} />
         <NutrientDetails label='Total Fat' value={totalFat} />

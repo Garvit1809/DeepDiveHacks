@@ -1,156 +1,130 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import styled from 'styled-components'
-
-const Section = styled.div`
- background-image: url("https://media.istockphoto.com/photos/colorful-coral-reef-with-many-fishes-picture-id508960998?b=1&k=20&m=508960998&s=170667a&w=0&h=rgX09SkfLgZf8JrHYCHRwll6zLUhKI0HiZz1bMsLc0E=");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  place-items: center;
-  overflow: hidden;
-  font-family: poppins;
-
-  .container {
-  position: relative;
-  width: 350px;
-  height: 500px;
-  border-radius: 20px;
-  padding: 40px;
-  box-sizing: border-box;
-  background: #ecf0f3;
-  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-}
-
-.brand-logo {
-  height: 1px;
-  width: 1px;
-  background: url("");
-  margin: 0;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
-}
-
-.brand-title {
-  margin-top: 10px;
-  font-weight: 900;
-  font-size: 1.8rem;
-  color: #1da1f2;
-  letter-spacing: 1px;
-}
-
-.inputs {
-  text-align: left;
-  margin-top: 30px;
-}
-
-label,
-input,
-button {
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-}
-
-label {
-  margin-bottom: 4px;
-}
-
-label:nth-of-type(2) {
-  margin-top: 12px;
-}
-
-input::placeholder {
-  color: gray;
-}
-
-input {
-  background: #ecf0f3;
-  padding: 10px;
-  padding-left: 20px;
-  height: 50px;
-  font-size: 14px;
-  border-radius: 50px;
-  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
-}
-
-button {
-  color: white;
-  margin-top: 20px;
-  background: #1da1f2;
-  height: 40px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 900;
-  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
-  transition: 0.5s;
-}
-
-button:hover {
-  box-shadow: none;
-}
-
-a {
-  position: absolute;
-  font-size: 8px;
-  bottom: 4px;
-  right: 4px;
-  text-decoration: none;
-  color: black;
-  background: yellow;
-  border-radius: 10px;
-  padding: 2px;
-}
-
-h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-input {
-  /* caret-color: red; */
-}
-`
+import { Heading, Box, FormControl, FormLabel, Input, Button, useToast } from '@chakra-ui/react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { applyAsResearcher } from '../api/researchers';
+import { ERROR_TOAST_OPTIONS } from '../constants/constants';
 
 function Register() {
-const navigate = useNavigate()
-  const handleSubmit = () => {
-    navigate('/')
-  }
-  return (
-    <Section>
-    <div className="container"> 
-      <form onSubmit={() => handleSubmit()} >
-        {/* <div className="brand-logo"></div> */}
-        <div className="brand-title">ScOObaDive</div>
-        <div className="inputs">
-          <label>NAME</label>
-          <input type="name" placeholder="John" required />
-          <label>EMAIL</label>
-          <input type="email" placeholder="example@test.com" required />
-          <label>PASSWORD</label>
-          <input type="password" placeholder="Min 6 charaters long" required />
-          <button type="submit" style={{ backgroundColor: "lightBlue" }}>
-            REGISTER
-          </button>
-        </div>
-      </form>
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const toast = useToast();
 
-      <button type="submit">LOGIN</button>
-    </div>
-    </Section>
+  const registerHandler = async () => {
+    console.log(name, email, password);
+    if (!name || !email || !password) {
+      return toast({ ...ERROR_TOAST_OPTIONS, title: 'Please fill all of the fields' });
+    }
+
+    const registerData = await applyAsResearcher(name, email, password);
+
+    if (Array.isArray(registerData) && registerData[0] === false) {
+      return toast({ ...ERROR_TOAST_OPTIONS, title: registerData[1] });
+    }
+
+    const jwt = registerData.jwt;
+    const userData = registerData.researcher;
+
+    console.log(jwt, userData);
+  };
+
+  return (
+    <Box
+      h='100vh'
+      w='100%'
+      bgImage='https://media.istockphoto.com/photos/colorful-coral-reef-with-many-fishes-picture-id508960998?b=1&k=20&m=508960998&s=170667a&w=0&h=rgX09SkfLgZf8JrHYCHRwll6zLUhKI0HiZz1bMsLc0E='
+      bgSize='cover'
+      display='flex'
+      alignItems='center'
+      justifyContent='center'>
+      <Box bg='#ecf0f3' minHeight='30rem' borderRadius='5px' w='28rem' p='1.75rem 2.5rem'>
+        <Heading as='h1' className='heading' color='#031b4e' mb='10' textAlign='center' fontSize='4xl'>
+          ScOObaDive
+        </Heading>
+
+        <Box>
+          <FormControl>
+            <FormLabel>Name</FormLabel>
+            <Input
+              type='text'
+              placeholder='John Doe'
+              style={{
+                background: '#ecf0f3',
+                padding: '10px',
+                paddingLeft: '20px',
+                height: '50px',
+                fontSize: '14px',
+                borderRadius: '50px',
+                boxShadow: 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white',
+              }}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </FormControl>
+
+          <FormControl>
+            <FormLabel>Email address</FormLabel>
+            <Input
+              type='email'
+              placeholder='example@test.com'
+              style={{
+                background: '#ecf0f3',
+                padding: '10px',
+                paddingLeft: '20px',
+                height: '50px',
+                fontSize: '14px',
+                borderRadius: '50px',
+                boxShadow: 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white',
+              }}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </FormControl>
+
+          <FormControl mt='15px'>
+            <FormLabel>Password</FormLabel>
+            <Input
+              type='password'
+              placeholder='Min 8 characters long'
+              style={{
+                background: '#ecf0f3',
+                padding: '10px',
+                paddingLeft: '20px',
+                height: '50px',
+                fontSize: '14px',
+                borderRadius: '50px',
+                boxShadow: 'inset 6px 6px 6px #cbced1, inset -6px -6px 6px white',
+              }}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </FormControl>
+
+          <Button
+            size='md'
+            mt='30px'
+            bg='transparent'
+            border='2px solid #1da1f2'
+            color='#031b4e'
+            _hover={{ bg: '#1da1f2', color: '#fff' }}
+            _focus={{ bg: '#1da1f2', color: '#fff' }}
+            w='100%'
+            onClick={registerHandler}>
+            Register
+          </Button>
+
+          <Link to='/login'>
+            <Button
+              size='md'
+              m='25px 0 15px'
+              bg='#1da1f2'
+              color='#fff'
+              _hover={{ bg: '#1da1f2' }}
+              _focus={{ bg: '#1da1f2' }}
+              w='100%'>
+              Login
+            </Button>
+          </Link>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

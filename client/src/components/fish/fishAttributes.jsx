@@ -5,9 +5,9 @@ const FishAttributes = ({ fishData }) => {
 
   return (
     <>
-      <Box mt='5' display='flex' gap='3'>
+      <Box mt='5' display='flex' gap='3' flexDirection='column'>
         {fishData.color ? (
-          <Box bg='#fff' borderRadius='5px' p='2'>
+          <Box bg='#fff' borderRadius='5px' p='2' w='max-content'>
             <b>Color:</b> {fishData.color[0]}
           </Box>
         ) : (
@@ -15,7 +15,7 @@ const FishAttributes = ({ fishData }) => {
         )}
 
         {fishData.availability ? (
-          <Box bg='#fff' borderRadius='5px' p='2'>
+          <Box bg='#fff' borderRadius='5px' p='2' w='max-content'>
             <b>Availability:</b> {fishData.availability}
           </Box>
         ) : (

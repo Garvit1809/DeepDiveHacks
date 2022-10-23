@@ -37,6 +37,12 @@ exports.getOneSpecies = catchAsync(async (req, res, next) => {
  */
 exports.createFishSpecies = catchAsync(async (req, res) => {
   const { fishDetails } = req.body;
+  console.log('------------------------------');
+  console.log(req.body);
+
+  return res.json({
+    fishDetails,
+  });
 
   const newFishSpecies = await FishSpecies.create({ ...fishDetails });
 

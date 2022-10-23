@@ -9,7 +9,7 @@ import seaHorse from '../assets/sea-horse.png';
 import whale from '../assets/wtyy_4yql_220505-removebg-preview.png';
 import starfish from '../assets/starfish.png';
 import fi from '../assets/Yellowtail Rockfish.png';
-import jn  from '../assets/Atlantic-Halibut.png'
+import jn from '../assets/Atlantic-Halibut.png';
 
 const Intro = styled.div`
   border: 1px solid red;
@@ -74,36 +74,35 @@ const FirstFish = styled.div`
     text-align: center;
   }
 
-  img.goldDup{
+  img.goldDup {
     position: absolute;
   }
 
-  img.gold1{
-    left:120px;
+  img.gold1 {
+    left: 120px;
     width: 120px;
     height: 100px;
   }
-  img.gold2{
+  img.gold2 {
     left: -3px;
     top: 24px;
     /* z-index: ; */
     width: 80px;
     height: 60px;
   }
-  img.gold3{
-    left:180px;
+  img.gold3 {
+    left: 180px;
     top: 80px;
     width: 120px;
     height: 100px;
   }
 
-  img.gold4{
-    left:200px;
+  img.gold4 {
+    left: 200px;
     top: 20px;
     width: 150px;
     height: 100px;
   }
- 
 `;
 
 const squidAni = keyframes`
@@ -201,7 +200,7 @@ from{
 } to {
   top: 50px
 }
-`
+`;
 
 const SixthFish = styled.div`
   /* border: 1px solid red; */
@@ -215,7 +214,7 @@ const SixthFish = styled.div`
   /* align-items: center; */
   /* justify-content: center; */
 
-  img{
+  img {
     left: 10vw;
     position: absolute;
     /* border: 1px solid red; */
@@ -235,34 +234,33 @@ const SeventhFish = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  img{
+  img {
     position: absolute;
     width: 150px;
     height: 120px;
   }
 
-  img.fish1{
+  img.fish1 {
     left: 300px;
     transform: rotate(-40deg);
   }
 
-  img.fish2{
+  img.fish2 {
     left: 360px;
     top: 5px;
   }
-  img.fish3{
+  img.fish3 {
     left: 360px;
     top: 60px;
   }
-  img.fish4{
+  img.fish4 {
     left: 260px;
     top: 5px;
   }
 `;
 
-
 const EighthFish = styled.div`
-/* border: 1px solid red; */
+  /* border: 1px solid red; */
   width: 100vw;
   height: 200px;
   position: relative;
@@ -270,18 +268,17 @@ const EighthFish = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-
-  img{
+  img {
     width: 150px;
     height: 120px;
   }
 
-  img.starfish1{
+  img.starfish1 {
     position: absolute;
     bottom: -10px;
     transform: rotate(60deg);
   }
-  img.starfish2{
+  img.starfish2 {
     position: absolute;
     bottom: 10px;
     right: 100px;
@@ -289,13 +286,12 @@ const EighthFish = styled.div`
     height: 70px;
     /* transform: rotate(60deg); */
   }
-  img.starfish3{
+  img.starfish3 {
     position: absolute;
     bottom: 120px;
     right: 10px;
     transform: rotate(140deg);
   }
-
 `;
 
 const FishPage = () => {
@@ -303,7 +299,8 @@ const FishPage = () => {
   return (
     <>
       <Navbar />
-      <Section data-scroll >
+
+      <Section data-scroll>
         <Intro></Intro>
         <FirstFish>
           <div
@@ -311,8 +308,7 @@ const FishPage = () => {
             data-scroll
             data-scroll-speed='12'
             data-scroll-direction='horizontal'
-            onClick={() => setGoldFish(!goldFish)}
-          >
+            onClick={() => setGoldFish(!goldFish)}>
             <img src={gold} alt='gold' className='goldfish'></img>
             <img src={gold} alt='gold' className='goldDup gold1'></img>
             <img src={gold} alt='gold' className='goldDup gold2'></img>
@@ -341,28 +337,48 @@ const FishPage = () => {
           <img src={whale} alt='' />
         </FifthFish>
         <SixthFish>
-              <img src={fi} alt="" data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' />
+          <img src={fi} alt='' data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' />
         </SixthFish>
         <SeventhFish>
-              <img src={jn} alt="" className='fish1' data-scroll
-              data-scroll-speed='-5'
-              data-scroll-direction='horizontal' />
-              <img src={jn} alt="" className='fish2' data-scroll
-              data-scroll-speed='-5.2'
-              data-scroll-direction='horizontal' />
-              <img src={jn} alt="" className='fish3' data-scroll
-              data-scroll-speed='-5.4'
-              data-scroll-direction='horizontal' />
-              <img src={jn} alt="" className='fish4' data-scroll
-              data-scroll-speed='-6'
-              data-scroll-direction='horizontal' />
+          <img
+            src={jn}
+            alt=''
+            className='fish1'
+            data-scroll
+            data-scroll-speed='-5'
+            data-scroll-direction='horizontal'
+          />
+          <img
+            src={jn}
+            alt=''
+            className='fish2'
+            data-scroll
+            data-scroll-speed='-5.2'
+            data-scroll-direction='horizontal'
+          />
+          <img
+            src={jn}
+            alt=''
+            className='fish3'
+            data-scroll
+            data-scroll-speed='-5.4'
+            data-scroll-direction='horizontal'
+          />
+          <img
+            src={jn}
+            alt=''
+            className='fish4'
+            data-scroll
+            data-scroll-speed='-6'
+            data-scroll-direction='horizontal'
+          />
         </SeventhFish>
         <EighthFish>
-        <img src={starfish} alt="" className='starfish1' />
-        <img src={starfish} alt="" className='starfish2'/>
-        <img src={starfish} alt="" className='starfish3' />
-        <img src={starfish} alt="" className='starfish4'/>
-        <img src={starfish} alt="" className='starfish5'/>
+          <img src={starfish} alt='' className='starfish1' />
+          <img src={starfish} alt='' className='starfish2' />
+          <img src={starfish} alt='' className='starfish3' />
+          <img src={starfish} alt='' className='starfish4' />
+          <img src={starfish} alt='' className='starfish5' />
         </EighthFish>
       </Section>
     </>

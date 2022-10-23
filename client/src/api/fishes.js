@@ -25,4 +25,15 @@ export const getOneFish = async (fishId) => {
   }
 };
 
-export const createFish = async (fishData) => {};
+export const createFish = async (fishData) => {
+  try {
+    const { data } = await axios.post(`${SERVER_BASE_URI}/api/v1/fishes`, {
+      fishData,
+    });
+
+    if (data.status === 'success') return { status: 'success' };
+    return getErrorMessage({});
+  } catch (error) {
+    return getErrorMessage(error);
+  }
+};
