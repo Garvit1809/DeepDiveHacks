@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Navbar from '../components/GeneralComp/Navbar';
 import gold from '../assets/goldfish-removebg-preview.png';
-import mackrel from '../assets/mackerel.png'
-import squid from '../assets/squid.png'
+import mackrel from '../assets/mackerel.png';
+import squid from '../assets/squid.png';
+import guppy from '../assets/guppy.png';
+import seaHorse from '../assets/sea-horse.png';
+import whale from '../assets/wtyy_4yql_220505-removebg-preview.png';
+import starfish from '../assets/starfish.png';
+import fi from '../assets/Yellowtail Rockfish.png';
 
 const fishAnimate = keyframes`
 0%{
@@ -41,7 +46,7 @@ const Section = styled.div`
 
 const FirstFish = styled.div`
   width: 100vw;
-  height: auto;
+  height: 50px;
   /* border: 1px solid red; */
 
   display: flex;
@@ -62,7 +67,6 @@ const FirstFish = styled.div`
     margin-right: 8rem;
   }
 
-  
   img.goldfish {
     width: 100px;
     height: 80px;
@@ -85,6 +89,37 @@ const FirstFish = styled.div`
     /* border: 1px solid red; */
     text-align: center;
   }
+
+  img.goldDup{
+    position: absolute;
+  }
+
+  img.gold1{
+    left:120px;
+    width: 120px;
+    height: 100px;
+  }
+  img.gold2{
+    left: -3px;
+    top: 24px;
+    /* z-index: ; */
+    width: 80px;
+    height: 60px;
+  }
+  img.gold3{
+    left:180px;
+    top: 80px;
+    width: 120px;
+    height: 100px;
+  }
+
+  img.gold4{
+    left:200px;
+    top: 20px;
+    width: 150px;
+    height: 100px;
+  }
+ 
 `;
 
 const squidAni = keyframes`
@@ -97,7 +132,7 @@ const squidAni = keyframes`
 100%{
   margin-left: 500px;
 }
-`
+`;
 
 const SecondFish = styled.div`
   /* border: 1px solid red; */
@@ -116,55 +151,96 @@ const SecondFish = styled.div`
 `;
 
 const ThirdFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
-  position: relative;
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 150px;
   margin-left: 0vw;
   margin-top: 0vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+
+  img {
+    margin-right: 10vw;
+    width: 150px;
+    height: 150px;
+  }
+`;
 
 const FourthFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
+  /* border: 1px solid blue; */
+  width: 100vw;
   height: 200px;
   position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
+
+  img {
+    position: absolute;
+    top: -60px;
+    left: -100px;
+    width: 300px;
+    transform: rotate(180deg) rotateX(180deg);
+  }
+`;
+
+const whaleAni = keyframes`
+0%{
+  margin-left: 100vw;
+}
+50%{
+  margin-left: 40vw;
+}
+100%{
+  margin-left: -40vw;
+}
+`;
+
 const FifthFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
-  height: 200px;
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100px;
   position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+
+  img {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    animation: ${whaleAni} 12s linear infinite;
+  }
+`;
+
+const yellowAni = keyframes`
+from{
+  top: 0;
+} to {
+  top: 50px
+}
 `
 
 const SixthFish = styled.div`
-  border: 1px solid red;
-  width: 200px;
+  /* border: 1px solid red; */
+  width: 100vw;
   height: 200px;
   position: relative;
-  margin-left: 0vw;
-  margin-top: 0vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`
+  /* margin-left: 0vw; */
+  /* margin-top: 0vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  img{
+    left: 10vw;
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 200px;
+    animation: ${yellowAni} 1s ease-in;
+    animation-delay: 7s;
+  }
+`;
 
 const SeventhFish = styled.div`
   border: 1px solid red;
@@ -177,43 +253,46 @@ const SeventhFish = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const EighthFish = styled.div`
-border: 1px solid red;
-width: 200px;
-height: 200px;
-position: relative;
-margin-left: 0vw;
-margin-top: 0vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;`
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: 0vw;
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 const NinthFish = styled.div`
-border: 1px solid red;
-width: 200px;
-height: 200px;
-position: relative;
-margin-left: 0vw;
-margin-top: 0vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;`
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: 0vw;
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
-const TenthFish = styled.div`  
-border: 1px solid red;
-width: 200px;
-height: 200px;
-position: relative;
-margin-left: 0vw;
-margin-top: 0vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;`
+const TenthFish = styled.div`
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: 0vw;
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 const FishPage = () => {
   const [goldFish, setGoldFish] = useState(false);
@@ -228,11 +307,13 @@ const FishPage = () => {
             data-scroll
             data-scroll-speed='12'
             data-scroll-direction='horizontal'
-            onMouseEnter={() => setGoldFish(!goldFish)}
-            onMouseLeave={() => setGoldFish(!goldFish)}
-            >
-            <img src={gold} alt='gold' className='goldfish' 
-            ></img>
+            onClick={() => setGoldFish(!goldFish)}
+          >
+            <img src={gold} alt='gold' className='goldfish'></img>
+            <img src={gold} alt='gold' className='goldDup gold1'></img>
+            <img src={gold} alt='gold' className='goldDup gold2'></img>
+            <img src={gold} alt='gold' className='goldDup gold3'></img>
+            <img src={gold} alt='gold' className='goldDup gold4'></img>
             {goldFish ? (
               <p className='about'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel consequuntur quibusdam laudantium,
@@ -244,24 +325,26 @@ const FishPage = () => {
           </div>
         </FirstFish>
         <SecondFish>
-          <img src={squid} alt=''/>
+          <img src={squid} alt='' />
         </SecondFish>
         <ThirdFish>
+          <img src={guppy} alt='' data-scroll data-scroll-speed='8' data-scroll-direction='vertical' />
         </ThirdFish>
         <FourthFish>
+          <img src={seaHorse} alt='' />
         </FourthFish>
         <FifthFish>
+          <img src={whale} alt='' />
         </FifthFish>
         <SixthFish>
+              <img src={fi} alt="" data-scroll data-scroll-speed='-8' data-scroll-direction='horizontal' />
         </SixthFish>
         <SeventhFish>
+              <img src={starfish} alt="" />
         </SeventhFish>
-        <EighthFish>
-        </EighthFish>
-        <NinthFish>
-        </NinthFish>
-        <TenthFish>
-        </TenthFish>
+        <EighthFish></EighthFish>
+        <NinthFish></NinthFish>
+        <TenthFish></TenthFish>
       </Section>
     </>
   );
