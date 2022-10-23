@@ -4,7 +4,7 @@ This project is submitted for [MLH - Hack and Snack 2022 Hackathon](https://deep
 
 ---
 
-The Idea behind **Scooba Dive** is to build a hassle-free web application which **helps peoples and researchers to know more about marine life**. We provide a ** virtual Scuba diving experience** and a fish **encyclopedia** through which users can experience or get aware of marine life 🤿. We are spreading awareness through a fun activity of Scuba Diving.
+The Idea behind **Scooba Dive** is to build a hassle-free web application which **helps peoples and researchers to know more about marine life**. We provide a **virtual Scuba diving experience** and a fish **encyclopedia** through which users can experience or get aware of marine life 🤿. We are spreading awareness through a fun activity of Scuba Diving.
 
 
 ---
