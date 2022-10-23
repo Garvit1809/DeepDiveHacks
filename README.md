@@ -20,7 +20,7 @@ The Idea behind **Scooba Dive** is to build a hassle-free web application which 
 
 ## What it does?
 
-This hackathon project is our attempt to solve the problems of researchers and peoples who want to know about marine lifes but not get any proper platform to explore it. Our website provides a single platform for both researchers and peoples who love marine lifes and wants to explore virtual Scuba diving. Here are the points , which helps you to understand how our website works?
+This hackathon project is our attempt to solve the problems of researchers and peoples who want to know about marine lifes but not get any proper platform to explore it. Our website provides a single platform for both researchers and peoples who love marine lifes and wants to explore virtual Scuba diving. Here are the points , which helps you to understand how our website works :-
 
 1.Upon visiting our web app the user is presented with a Sign-Up Page where they need to first register to explore our site. If the user has already registered, they can click on login button which will render them directly to the login page where they need to provide the password to login.
 
