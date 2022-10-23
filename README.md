@@ -58,7 +58,7 @@ We experimented lot of technologies and learnt pretty much everything we used ou
 
 ## What's next for Scooba Dive?
 
-
+We plan to explore more on this  and create a complete web application and help the user to experience the best out of it.
 
 ## Team Members:
 <a href="https://github.com/Garvit1809/DeepDiveHacks/graphs/contributors">
